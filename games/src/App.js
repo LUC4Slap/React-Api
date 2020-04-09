@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Corpo from './components/Corpo';
+import Header from './components/header'
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Corpo />
     </div>
   );
