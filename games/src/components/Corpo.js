@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Header from './header'
+import Header from './Header'
 
 export default class Corpo extends Component {
   constructor(props) {
