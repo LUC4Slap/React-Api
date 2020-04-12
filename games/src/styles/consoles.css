@@ -1,0 +1,23 @@
+.Consoles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+.imagem {
+    display: flex;
+    width: 300px;
+    background: red;
+}

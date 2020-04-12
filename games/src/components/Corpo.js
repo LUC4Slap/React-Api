@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Header from './Header'
+import Header from './Header';
+import '../styles/corpo.css';
 
 export default class Corpo extends Component {
   constructor(props) {
@@ -24,15 +25,20 @@ export default class Corpo extends Component {
     return (
       <div>
         <Header />
-        {this.state.resposta.map((m) => {
+        {this.state.resposta.map(m => {
           return (
             <div className="container" key={m.id}>
               <div className="card mt-3">
                 <div className="card-header">
-                  <strong>{m.title}</strong>
+                  <h1><strong>{m.title}</strong></h1>
                 </div>
                 <div className="card-body">
-                  <span>R${m.price}</span>
+                  <div className="nomeGame">
+                    <span>R${m.price}</span>
+                  </div>
+                  <div className="botao">
+                    <button className="btn btn-outline-primary">Comprar</button>
+                  </div>
                 </div>
               </div>
             </div>
